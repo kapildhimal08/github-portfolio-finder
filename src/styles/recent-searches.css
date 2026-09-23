@@ -1,0 +1,78 @@
+.gf-recent {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed #1e2a3d;
+  font-family: 'JetBrains Mono', Consolas, monospace;
+}
+
+.gf-recent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.gf-recent-title {
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7688;
+}
+
+.gf-recent-clear {
+  background: none;
+  border: none;
+  color: #6b7688;
+  font: inherit;
+  font-size: 10.5px;
+  cursor: pointer;
+  padding: 0;
+}
+.gf-recent-clear:hover {
+  color: #f85149;
+  text-decoration: underline;
+}
+
+.gf-recent-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.gf-recent-chip {
+  display: inline-flex;
+  align-items: center;
+  background: #10182a;
+  border: 1px solid #1e2a3d;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.gf-recent-chip:hover {
+  border-color: #58a6ff;
+}
+
+.gf-recent-chip-btn {
+  background: none;
+  border: none;
+  color: #c9d3e0;
+  font: inherit;
+  font-size: 11.5px;
+  padding: 5px 4px 5px 12px;
+  cursor: pointer;
+}
+.gf-recent-chip-btn:hover {
+  color: #58a6ff;
+}
+
+.gf-recent-chip-remove {
+  background: none;
+  border: none;
+  color: #6b7688;
+  font-size: 13px;
+  line-height: 1;
+  padding: 5px 10px 5px 4px;
+  cursor: pointer;
+}
+.gf-recent-chip-remove:hover {
+  color: #f85149;
+}

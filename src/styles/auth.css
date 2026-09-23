@@ -1,0 +1,253 @@
+/* ---------- Top auth bar ---------- */
+.gf-authbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 8px 14px;
+  background: #10182a;
+  border-bottom: 1px solid #1e2a3d;
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-size: 12px;
+}
+
+.gf-authbar-user {
+  color: #6b7688;
+  margin-right: auto;
+}
+
+.gf-authbar-link {
+  background: none;
+  border: none;
+  color: #58a6ff;
+  cursor: pointer;
+  font: inherit;
+  padding: 4px 8px;
+}
+.gf-authbar-link:hover {
+  text-decoration: underline;
+}
+
+.gf-authbar-signup {
+  background: rgba(63, 185, 80, 0.12);
+  border: 1px solid rgba(63, 185, 80, 0.3);
+  border-radius: 4px;
+  color: #3fb950;
+}
+.gf-authbar-signup:hover {
+  background: rgba(63, 185, 80, 0.2);
+  text-decoration: none;
+}
+
+/* ---------- Modal shell (shared by AuthModal + AnalysisHistory) ---------- */
+.gf-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.gf-modal {
+  width: 100%;
+  max-width: 380px;
+  background: #0d1220;
+  border: 1px solid #1e2a3d;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  color: #c9d3e0;
+}
+
+.gf-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.gf-modal-header h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #eef2f8;
+}
+
+.gf-modal-close {
+  background: none;
+  border: none;
+  color: #6b7688;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+.gf-modal-close:hover {
+  color: #eef2f8;
+}
+
+/* ---------- Auth form ---------- */
+.gf-auth-reason {
+  font-size: 12px;
+  color: #e3b341;
+  background: rgba(227, 179, 65, 0.1);
+  border: 1px solid rgba(227, 179, 65, 0.3);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin: 0 0 14px;
+}
+
+.gf-auth-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #1e2a3d;
+}
+
+.gf-auth-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  color: #6b7688;
+  font: inherit;
+  font-size: 12.5px;
+  padding: 8px 0;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.gf-auth-tab.active {
+  color: #eef2f8;
+  border-bottom-color: #3fb950;
+}
+
+.gf-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gf-auth-input {
+  background: #0a0e14;
+  border: 1.5px solid #3d4b63;
+  border-radius: 6px;
+  padding: 9px 12px;
+  color: #eef2f8;
+  font: inherit;
+  font-size: 13px;
+  outline: none;
+}
+.gf-auth-input:focus {
+  border-color: #3fb950;
+  box-shadow: 0 0 0 3px rgba(63, 185, 80, 0.12);
+}
+
+.gf-auth-info {
+  font-size: 12px;
+  color: #58a6ff;
+  margin: 0;
+}
+
+.gf-auth-submit {
+  width: 100%;
+  margin-top: 4px;
+  text-align: center;
+}
+
+/* ---------- Usage badge ---------- */
+.gf-usage-badge {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #6b7688;
+  text-align: center;
+}
+.gf-usage-badge-auth {
+  color: #3fb950;
+}
+.gf-usage-badge-low {
+  color: #e3b341;
+}
+
+/* ---------- History list ---------- */
+.gf-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.gf-history-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: #0a0e14;
+  border: 1px solid #1e2a3d;
+  border-radius: 6px;
+  padding: 9px 12px;
+  color: #c9d3e0;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.gf-history-item:hover {
+  border-color: #58a6ff;
+}
+
+.gf-history-user {
+  color: #eef2f8;
+  font-weight: 600;
+}
+.gf-history-score {
+  color: #e3b341;
+}
+.gf-history-date {
+  margin-left: auto;
+  color: #6b7688;
+  font-size: 10.5px;
+}
+
+/* ---------- Save button on the report ---------- */
+.gf-save-row {
+  margin-top: 12px;
+}
+.gf-save-btn {
+  font-size: 12px;
+}
+.gf-save-success {
+  color: #3fb950;
+  font-size: 12px;
+  margin-top: 6px;
+}
+/* ---------- Password visibility toggle ---------- */
+/* Add these rules to the end of your existing src/styles/auth.css */
+
+.gf-auth-input-wrap {
+  position: relative;
+  display: flex;
+}
+
+.gf-auth-input-wrap .gf-auth-input {
+  width: 100%;
+  padding-right: 38px; /* room for the toggle button */
+}
+
+.gf-auth-toggle-visibility {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 15px;
+  line-height: 1;
+  padding: 6px 8px;
+  cursor: pointer;
+  color: #6b7688;
+}
+.gf-auth-toggle-visibility:hover {
+  color: #eef2f8;
+}
